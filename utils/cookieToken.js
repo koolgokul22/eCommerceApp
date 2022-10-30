@@ -4,7 +4,7 @@ const cookieToken = async (user, res) => {
 
   const options = {
     expires: new Date(
-      Date.now() + process.env.COOKIE_EXPIRY * 24 * 60 * 60 * 1000
+      Date.now() + process.env.COOKIE_EXPIRY * 24 * 60 * 60 * 1000 //2days
     ),
     httpOnly: true,
   };

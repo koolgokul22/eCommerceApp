@@ -70,7 +70,7 @@ userSchema.methods.getJWTToken = async function () {
     },
     process.env.JWT_SECRET,
     {
-      expiresIn: process.env.JWT_EXPIRY,
+      expiresIn: process.env.JWT_EXPIRY, //2d
     }
   );
 };
