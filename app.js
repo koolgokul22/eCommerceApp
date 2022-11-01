@@ -23,7 +23,7 @@ app.use(cookieParser());
 app.use(
   fileUploader({
     useTempFiles: true,
-    tempFileDir: "/temp/",
+    tempFileDir: "temp",
   })
 );
 

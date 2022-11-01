@@ -13,7 +13,7 @@ exports.signUp = BigPromise(async (req, res, next) => {
     return next(new CustomError("Please provide a profile photo", 400));
   }
 
-  const file = req.files.profilePicture; //In frontend the input field (variable)  name should be userPhoto.
+  const file = req.files.profilePicture; //In frontend the input field (variable)  name should be profilePicture
   photoUploadResponse = await cloudinary.uploader.upload(file.tempFilePath, {
     folder: "users",
     width: 150,
